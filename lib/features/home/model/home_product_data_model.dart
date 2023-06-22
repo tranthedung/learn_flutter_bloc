@@ -5,5 +5,5 @@ class ProductDataModel {
   final double price;
   final String imageUrl;
 
-  ProductDataModel(this.id, this.name, this.description, this.price, this.imageUrl);
+  ProductDataModel(this.id, this.name, this.description, this.price, this.imageUrl, {required name, required price, required id, required description, required imageUrl});
 }
