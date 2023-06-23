@@ -3,10 +3,10 @@ import 'package:flutter_bloc_test/features/cart/bloc/cart_bloc.dart';
 import 'package:flutter_bloc_test/features/home/bloc/home_bloc.dart';
 import 'package:flutter_bloc_test/features/home/model/home_product_data_model.dart';
 
-class CartTileWiget extends StatelessWidget {
+class CartTileWidget extends StatelessWidget {
   final ProductDataModel productDataModel;
   final CartBloc cartBloc;
-  const CartTileWiget(
+  const CartTileWidget(
       {super.key, required this.productDataModel, required this.cartBloc});
 
   @override

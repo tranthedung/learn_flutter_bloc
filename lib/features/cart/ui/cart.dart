@@ -16,7 +16,7 @@ class _CartState extends State<Cart> {
   final CartBloc cartBloc = CartBloc();
   @override
   void initState() {
-    // TODO: implement initState
+    cartBloc.add(CartInitialEvent());
     super.initState();
   }
 
@@ -40,7 +40,7 @@ class _CartState extends State<Cart> {
               return ListView.builder(
                 itemCount: successState.cartItems.length,
                 itemBuilder: (context, index) {
-                  return CartTileWiget(
+                  return CartTileWidget(
                     productDataModel: successState.cartItems[index],
                     cartBloc: cartBloc,
                   );
